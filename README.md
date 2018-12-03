@@ -1,11 +1,18 @@
 # docker-brook-web
-brook-web docker image .💻brook程序服务端Web后台管理。✈️通过网页直接管理Brook、ShadowSocks、Socks5服务(Telegram可用)！
+[brook-web](https://github.com/Ccapton/brook-web) docker image .💻brook程序服务端Web后台管理。✈️通过网页直接管理Brook、ShadowSocks、Socks5服务(Telegram可用)！
 
 
 
 通过网页直接管理Brook、ShadowSocks、Socks5服务
+* Default
+  * [![](https://images.microbadger.com/badges/image/hunkier/brook-web.svg)](https://microbadger.com/images/hunkier/brook-web) **latest**: pointed to `hunkier/brook-web:alpine` 
+* alpine
+  * [![](https://images.microbadger.com/badges/image/hunkier/brook-web:alpine.svg)](https://microbadger.com/images/hunkier/brook-web:alpine) **alpine**: pointed to `hunkier/brook-web:alpine` on top of **Alpine Linux**
+* ubuntu
+  * [![](https://images.microbadger.com/badges/image/hunkier/brook-web:ubuntu.svg)](https://microbadger.com/images/hunkier/brook-web:ubuntu)  on top of **Ubuntu**
 
-# brook-web
+
+# [brook-web](https://github.com/Ccapton/brook-web)
 
 ### [brook](https://github.com/txthinking/brook)程序服务端Web后台管理服务器（Linux|MacOS），基于python、flask、flask-restful
 
@@ -22,14 +29,14 @@ brook-web docker image .💻brook程序服务端Web后台管理。✈️通过�
 运行镜像
 
 ```
-docker run --net=host -v /root/brook-web:/root/brook-web -d hunkier/brook-web 
+docker run --net=host -d hunkier/brook-web 
 ```
 
 **默认端口5000**
-若要修改服务端口，参考：
+若要修改管理账号、服务端口参考：
 
 ```
-docker run --net=host -v /root/brook-web:/root/brook-web -d -e WEB_PORT=5000 hunkier/brook-web 
+docker run --net=host -d -e USER=admin -e PASSWORD=admin -e PORT=5000 hunkier/brook-web 
 ```
 
 # 开始访问
