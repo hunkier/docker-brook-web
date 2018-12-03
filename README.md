@@ -9,7 +9,9 @@
 * alpine
   * [![](https://images.microbadger.com/badges/image/hunkier/brook-web:alpine.svg)](https://microbadger.com/images/hunkier/brook-web:alpine) **alpine**: pointed to `hunkier/brook-web:alpine` on top of **Alpine Linux**
 * ubuntu
-  * [![](https://images.microbadger.com/badges/image/hunkier/brook-web:ubuntu.svg)](https://microbadger.com/images/hunkier/brook-web:ubuntu)  on top of **Ubuntu**
+  * [![](https://images.microbadger.com/badges/image/hunkier/brook-web:ubuntu.svg)](https://microbadger.com/images/hunkier/brook-web:ubuntu) **ubuntu**: pointed to `hunkier/brook-web:ubuntu` on top of **Ubuntu**
+* centos
+  * [![](https://images.microbadger.com/badges/image/hunkier/brook-web:centos.svg)](https://microbadger.com/images/hunkier/brook-web:centos) **centos**: pointed to `hunkier/brook-web:centos` on top of **centos**
 
 
 # [brook-web](https://github.com/Ccapton/brook-web)

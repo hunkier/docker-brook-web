@@ -9,7 +9,7 @@ RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true && \
     apt-get update && \
     apt-get install git python-pip curl tzdata -y && \
     cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
-    git clone https://github.com/Ccapton/brook-web.git /brook-web && \
+    git clone --depth 1 https://github.com/Ccapton/brook-web.git /brook-web && \
     cd /brook-web && pip install -r requirements.txt && \
     python install-brook.py && \
     apt-get autoclean && apt-get --purge -y autoremove && \

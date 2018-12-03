@@ -15,7 +15,7 @@ RUN cd /tmp                                                              && \
     python-dev sshpass jpeg-dev tzdata procps  py2-cffi bash            && \
     pip install --upgrade pip && echo "Asia/Shanghai" /etc/timezone  &&\
     rm -rf /etc/localtime && ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime &&\
-    git clone https://github.com/Ccapton/brook-web.git /brook-web && \
+    git clone --depth 1 https://github.com/Ccapton/brook-web.git /brook-web && \
     cd /brook-web && pip install -r requirements.txt && \
     python install-brook.py && \
     apk del build-dependencies                                           && \
