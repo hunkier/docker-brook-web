@@ -3,7 +3,8 @@ MAINTAINER hunkier <huangkuier@gmail.com>
 
 RUN yum install -y epel-release && \
     yum install -y git  python-pip curl tzdata && \
-    ls /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
+    rm -rf /etc/localtime && \
+    ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && \
     pip install --upgrade pip && \
     git clone --depth 1 https://github.com/Ccapton/brook-web.git /brook-web && \
     cd /brook-web && pip install -r requirements.txt && \
