@@ -33,12 +33,25 @@
 ```
 docker run --net=host -d hunkier/brook-web 
 ```
+或者
+```
+docker run --name brook-web \
+           --net=host \
+           --restart=always \
+           -v /usr/local/brook-web/:/brook-web/ \
+           -d hunkier/brook-web 
+```
 
 **默认端口5000**
 若要修改管理账号、服务端口参考：
 
 ```
-docker run --net=host -d -e USER=admin -e PASSWORD=admin -e PORT=5000 hunkier/brook-web 
+docker run --name brook-web \
+           --net=host \
+           --restart=always \
+           -v /usr/local/brook-web/:/brook-web/ \
+           -e USER=admin -e PASSWORD=admin -e PORT=5000 \
+           -d hunkier/brook-web 
 ```
 
 # 开始访问
